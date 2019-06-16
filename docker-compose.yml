@@ -1,0 +1,32 @@
+version: '3'
+services:
+  # consul:
+  #   image: consul
+  #   ports:
+  #     - '8500:8500'
+  proxy:
+    container_name: starter-web-rproxy
+    build: ./nginx
+    image: starter-web-rproxy:latest
+    environment:
+      NGINX_HOST: 172.17.0.1
+      NGINX_PORT: 80
+    ports:
+      - '80:80'
+    # depends_on:
+    #   - consul
+  web:
+    container_name: starter-web
+    build:
+      context: .
+      args:
+        NODE_ENV: production
+        API_ENV: production
+    image: starter-web:latest
+    environment:
+      NODE_ENV: production
+      API_ENV: production
+    ports:
+      - '3000:3000'
+    depends_on:
+      - proxy

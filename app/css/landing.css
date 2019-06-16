@@ -1,0 +1,11 @@
+/* app/css/landing.css */
+
+@import './core/variables.css';
+
+.header {
+  padding: 2rem 1rem;
+}
+
+.content {
+  padding: 3rem 1rem;
+}

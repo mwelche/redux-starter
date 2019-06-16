@@ -1,0 +1,44 @@
+@import './core/variables.css';
+
+.container {
+  top: 8px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-index-modal);
+}
+
+.wrapper {
+  box-shadow: 0 0 10px 2px color(var(--black) a(15%));
+  height: 64px;
+  width: 288px;
+  padding: 8px 24px 8px 8px;
+  margin-top: 4px;
+}
+
+.exiting {
+  animation: disappear 1s;
+}
+
+.close {
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0;
+  right: 6px;
+  top: 6px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.content {
+  padding: 0;
+  color: var(--white);
+}
+
+@keyframes disappear {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}

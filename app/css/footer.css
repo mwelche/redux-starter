@@ -1,0 +1,9 @@
+/* app/css/login.css */
+
+@import './core/variables.css';
+
+.main {
+  background-color: var(--grey-800);
+  font-size: .875rem;
+  padding: 3.75rem 0 5rem;
+}

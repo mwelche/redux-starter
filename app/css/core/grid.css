@@ -1,0 +1,86 @@
+/* app/css/core/grid.css */
+
+:global .container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  width: 1260px;
+}
+
+:global [class*='grid_'] {
+  order: 1;
+}
+
+:global .grid_full {
+  width: 100%;
+}
+
+:global .grid_1-5 {
+  width: 20%;
+}
+
+:global .grid_1-4 {
+  width: 25%;
+}
+
+:global .grid_1-3 {
+  width: 33.333%;
+}
+
+:global .grid_1-2 {
+  width: 50%;
+}
+
+:global .grid_2-3 {
+  width: 66.666%;
+}
+
+:global .grid_3-4 {
+  width: 75%;
+}
+
+:global .grid_1-4-offset {
+  margin-left: 25%;
+}
+
+:global .grid_flex,
+:global .grid_center,
+:global .grid_flexSb,
+:global .grid_flexSa,
+:global .grid_flex_wrap,
+:global .grid_flex_middle {
+  display: flex;
+}
+
+:global .grid_center {
+  justify-content: center;
+}
+
+:global .grid_flexSb {
+  justify-content: space-between;
+}
+
+:global .grid_flexSa {
+  justify-content: space-around;
+}
+
+:global .grid_flex_wrap {
+  flex-wrap: wrap;
+}
+
+:global .grid_flex_middle {
+  align-items: center;
+}
+
+:global .flex_col {
+  flex-direction: column;
+}
+
+@media (--screen-s) {
+  :global .container {
+    padding: 0 .75rem;
+  }
+}

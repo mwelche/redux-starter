@@ -1,0 +1,53 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "security"],
+  "extends": "airbnb",
+  "globals": {
+    "BROWSER": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "array-callback-return": 1,
+    "arrow-body-style": 0,
+    "camelcase": 1,
+    "consistent-return": 1,
+    "global-require": 0,
+    "import/first": 0,
+    "import/prefer-default-export": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/media-has-caption": 0,
+    "max-len": [1, 120, 2, {
+      "ignoreComments": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreUrls": true,
+      "tabWidth": 2
+    }],
+    "no-console": 0,
+    "no-continue": 0,
+    "no-mixed-operators": 0,
+    "no-nested-ternary": 1,
+    "no-param-reassign": 1,
+    "no-plusplus": 0,
+    "no-restricted-syntax": [2, "ForOfStatement"],
+    "no-underscore-dangle": 0,
+    "no-unused-vars": 1,
+    "react/forbid-prop-types": 1,
+    "react/jsx-closing-bracket-location": 1,
+    "react/jsx-closing-tag-location": 1,
+    "react/jsx-filename-extension": 0,
+    "react/no-did-mount-set-state": 1,
+    "react/no-unused-prop-types": 1,
+    "react/require-default-props": 1,
+    "react/prefer-stateless-function": 1,
+    "react/prop-types": 1,
+    "react/sort-comp": 1,
+    "space-infix-ops": ["error", {"int32Hint": true}],
+  }
+}

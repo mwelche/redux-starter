@@ -1,0 +1,126 @@
+/* app/css/core/button.css */
+
+:global .btn,
+:global .btn-small,
+:global .btn-large {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--grey-10);
+  }
+  &:active {
+    background-color: var(--grey-100);
+  }
+}
+
+:global .btn {
+}
+
+:global .btn-small {
+  line-height: 1.25rem;
+}
+
+:global .btn-large {
+  line-height: 2.5rem;
+}
+
+:global .u-btn-xl {
+  height: 50px;
+  padding: 0 50px;
+  border: none;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+:global .u-btn-less-padding {
+  padding: 0 25px;
+}
+
+/* Colors */
+:global .btn-blue {
+  background-color: var(--blue);
+  border: none;
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+  &:active {
+    background-color: var(--blue-light);
+    color: var(--white);
+  }
+}
+
+:global .btn-black {
+  background: var(--black);
+  border: 2px solid var(--black);
+  color: var(--white);
+  
+  &:hover {
+    background: var(--white);
+    color: var(--black);
+  }
+}
+
+:global .btn-grey{
+  background: var(--grey-300);
+  color: var(--white);
+  
+  &:hover {
+    background: var(--grey-400);
+  }
+}
+
+:global .btn-white {
+  color: var(--black);
+  background: var(--white);
+  border: 2px solid var(--black);
+}
+
+:global .btn-disabled {
+  background-color: var(--grey-600);
+  color: var(--grey-400);
+  
+  &:hover {
+    background-color: var(--grey-600);
+    color: var(--grey-400);
+    cursor: no-drop;
+  }
+}
+
+:global .btn-pink,
+:global .btn-pink-flat {
+  color: var(--white);
+  background: var(--pink);
+}
+
+:global .btn-pink:hover {
+  background: var(--pink-dark);
+  color: var(--white);
+}
+
+:global .btn-bo {
+  background-color: transparent;
+  border: 2px solid var(--black);
+  color: var(--black);
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
+
+:global .btn-wo {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}

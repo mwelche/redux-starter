@@ -1,0 +1,74 @@
+/* app/css/modal.css */
+
+@import './core/variables.css';
+
+.overlay {
+  background-color: color(var(--black) a(60%));
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index-modal);
+}
+
+.module {
+  left: 50%;
+  max-height: 100%;
+  overflow-y: scroll;
+  pointer-events: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moduleAlert, .error {
+  background: var(--white);
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+.modalPadding {
+  padding: 2rem;
+}
+
+.errorModal {
+  width: 420px;
+}
+
+.errorText {
+  margin: 3rem 2rem;
+  font-size: 1.25rem;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+  color: var(--grey-800);
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 1;
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
+
+@media  screen and (--screen-s) {
+  .moduleMobileResponsive {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+  }
+}
+
+

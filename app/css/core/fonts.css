@@ -1,0 +1,13 @@
+/* app/css/core/fonts.css */
+
+@media screen and (min-width: 640px) {
+  /*
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("some/path/OpenSans-Regular.woff2") format('woff2'),
+      url("some/path/OpenSans-Regular.woff") format('woff');
+  }
+  */
+}

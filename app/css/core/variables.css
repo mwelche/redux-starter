@@ -1,0 +1,95 @@
+/* app/css/core/variables.css
+ * -–------------------------
+ * Variables 
+**/
+
+:root {
+  /* Greyscale */
+  --black: #111111; /* color palette */
+  --grey-800: #232323;
+  --grey-700: #333333;
+  --grey-600: #676767;
+  --grey-500: #999999; /* color palette */
+  --grey-400: #a8a8a8;
+  --grey-300: #bfbfbf; /* color palette */
+  --grey-100: #cccccc;
+  --grey-80: #d6d6d6;
+  --grey-20: #eaeaea; /* color palette */
+  --grey-15: #f5f5f5;
+  --grey-10: #f5f5f5; /* color palette */
+  --grey-5: #fcfcfc;
+  --white: #ffffff; /* color palette */
+
+  /* Brand Colors */
+  /* Pink */
+  --pink-dark: #e834b1;
+  --pink: #ff43c5;
+  --pink-grey: #c65fa6;
+  --pink-light: #ffc6ed;
+
+  /* Blue */
+  --blue-dark: #0072e9;
+  --blue: #0f81ff;
+  --blue-light: #a2cfff;
+  --blue-lighter: #e3f1ff;
+
+  /* Yellow */
+  --yellow: #ffad00;
+
+  /* Green */
+  --green: #2bcc3c;
+
+  /* Reds */
+  --mist-red: #f9d6d2;
+  --light-red: #eb6e60;
+  --red: #e74c3c;
+  --dark-red: #c0392b;
+  --error-red: #960107;
+
+  /* Social */
+  --facebook-blue:#3b589a;
+  --snapchat-yellow: #fffb00;
+
+  /* Color Gradients  */
+  --gradient-blue: linear-gradient(to right, var(--blue), var(--blue-light), var(--pink-light));
+  
+  /* Border Radius */
+  --border-radius: 4px;
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-mdlg: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 16px;
+  --border-radius-btn: 25px;
+
+  /* Z-index */
+  --z-index-modal: 999999;
+  --z-index-overlay: 1000;
+  --z-index-mainNav:  999;
+  --z-index-tooltip: 10;
+  --z-index-editorOverlay: 3;
+  --z-index-overContent: 2;
+  --z-index-content: 1;
+
+  /* Media Queries */
+  
+  @custom-media --screen-xxl (max-width: 1800px);
+  @custom-media --screen-xl (max-width: 1300px);
+  @custom-media --screen-l (max-width: 1024px);
+  @custom-media --screen-iPhoneX (max-width: 820px);
+  @custom-media --screen-m (max-width: 768px);
+  @custom-media --screen-mini (max-width: 680px);
+  @custom-media --screen-s (max-width: 570px);
+  @custom-media --screen-xs (max-width: 375px);
+  @custom-media --screen-xxs (max-width: 320px);
+  @custom-media --screen-landscape (orientation: landscape);
+  
+  @custom-media --screen-desktop (min-width: 480px);
+  /* Nav custom vars */
+  --nav-line-height: 90px;
+  --nav-short-line-height: 60px;
+  --nav-border-height: 1px;
+  --nav-height: calc(var(--nav-line-height) + var(--nav-border-height));
+
+  --timeline-height: 182px;
+}
