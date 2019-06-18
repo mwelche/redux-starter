@@ -79,11 +79,11 @@ export default {
             {
               loader: 'css-loader',
               options: {
-                context: path.resolve(__dirname, '../app/css'),
-                modules: true,
+                modules: {
+                  context: path.resolve(__dirname, '../app/css'),
+                  localIdentName: '[hash:6]',
+                },
                 importLoaders: 2,
-                localIdentName: '[hash:6]',
-                minimize: true,
               },
             },
             {

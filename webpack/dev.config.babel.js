@@ -80,10 +80,11 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                localIdentName: '_[name]__[local]',
+              },
               importLoaders: 2,
               sourceMap: true,
-              localIdentName: '_[name]__[local]',
             },
           },
           {
